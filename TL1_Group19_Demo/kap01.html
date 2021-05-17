@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/utilities.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Loruki.</h1>
+            <nav>
+                <ul class="navi">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="docs-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="xl">Das Web</h1>
+                <p class="lead"> Inhalt: Einführung, Architektur, Protokoll usw.
+                </p>
+            </div>
+            <img src="images/docs.png" alt="docs">
+        </div>
+    </section>
+
+    <!--Sub Head-->
+    <section class="features-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">Das Grundprinzip des World Wide Web</h1>
+            </div>
+            <img src="images/www1.png" alt="server">
+            <img src="www2.png" alt="server1">
+        </div>
+    </section>
+
+    <!-- Docs main-->
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <img src="images/komponent.jpg" alt="komponent">
+            </div>
+            <div class="card">
+                <h2>1.1 Komponenten der frühren Technik</h2>
+                <ul class="a">wenige fundamentale Komponenten:</ul>
+                    <li>ein Serverprogramm,</li>
+                        <ul>
+                            <li>welches auf Anfragen reagiert und die entsprechenden Antworten generiert,</li>
+                        </ul>
+                    <li>ein Clientprogramm,</li>
+                        <ul>
+                            <li>welches vom Server diese Informationen anfordert und</li>
+                            <li>die Rückantwort zur Anzeige bringt,</li>
+                        </ul>
+                    <li>eine Protokollfamilie,</li>
+                        <ul>
+                            <li>welche die Kommunikation zwischen Server und Client festlegt,</li>
+                            <li>hinzu kommt das Adressierungsschema der URL bzw. URI,</li>
+                        </ul>
+                    <li>eine Auszeichnungssprache</li>
+                        <ul>
+                            <li>für die Codierung der anzuzeigenden Information.</li>
+                        </ul>
+                
+            </div>
+        </div>
+    </section>
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <img src="images/clientserv.jpg" alt="clientserv">
+            </div>
+            <div class="card">
+                <h2>1.2 Client/Server prinzip</h2>
+                <ul>
+                    <li>Browser spielt die Rolle eines Web-Clients, News-Clients …</li>
+                    <li>Internet-Dienste arbeiten nach dem Client/Server-Prinzip</li>
+                    <li>Laden eines HTML-Dokuments ==> Lieferung dieser Ressource</li>
+                    <li>Sowohl Client als auch Server sind ihrer Natur nach Programme oder besser Prozesse</li>
+                    <li>Server wartet rund um die Uhr auf Anfragen von Clients.</li>
+                    <li>Kommunikation wird grundsätzlich vom Client initiiert</li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <img src="images/schichtenModell.jpg" alt="Schichten-Modell">
+                <p>Eigene Darstellung.</p>
+                <p>Für mehr Informationen siehe z. B.</p>
+                <a href="https://de.wikibooks.org/wiki/Netzwerktechnik:_OSI">https://de.wikibooks.org/wiki/Netzwerktechnik:_OSI</a>
+            </div>
+            <div class="card">
+                <h2>1.3 Schichten-Modell</h2>
+                <ul>
+                    <li>Das komplette OSI-Referenzmodell für Netzwerkkommunikation mit Einteilung in Ebenen und Gruppierung der Ebenen</li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <img src="schichten.jpg" alt="Internet Protocol">
+            </div>
+            <div class="card">
+                <h2>1.5 Internet Protocol</h2>
+                <ul>
+                    <li>regelt die Kommunikation zwischen zwei Rechnern ohne vorherigen Verbindungsaufbau auf der Vermittlungsschicht</li>
+                    <li>Keine Mechanismen der Fehlererkennung und -korrektur</li>
+                    <li>Zwei Versionen: IPv4 und IPv6 (größerer Adressraum, IPSec …)</li>
+                    <li>IPv4</li>
+                        <ul>
+                            <li>Bekannt durch Schema der IP-Adressen bestehend aus 4 Gruppen/Bytes</li>
+                            <li>z. B. 141.13.16.227</li>
+                        </ul>
+                    <li>Beziehung zwischen Namen und Netzwerkadresse regelt der Domain Name Service (DNS)</li>
+                    <li>Da für jede Zahl nur 8 Bit zur Verfügung stehen, gibt es insgesamt</li>
+                        <ul>
+                            <li>𝑁 = 2^32 = 4.294.967.296 Netzwerkadressen (phep toan mu???)</li>
+                            <li>Davon einige Sonderadressen (z. B. 127.0.0.1 für localhost)</li>
+                        </ul>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <img src="images/DMS.jpg" alt="HTML5 Icon">
+                <a href="https://nmap.org/download.html">https://nmap.org/download.html</a>
+            </div>
+            <div class="card">
+                <h2>1.6 Domain Name Service: DNS</h2>
+                <ul>
+                    <li>verteilter hierarchischer Verzeichnisdienst</li>
+                    <li>verwaltet den Namensraum des Internets</li>
+                    <li>in Zonen unterteilt → unabhängige Administratoren zuständig</li>
+                    <li>Hauptsächlich:</li>
+                        <ul>
+                            <li>Umsetzung von Domainnamen in IP-Adressen („forward lookup“)</li>
+                            <li>vergleichbar Telefonbuch: Namen → Telefonnummer</li>
+                        </ul>
+                </ul> 
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Loruki</h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
