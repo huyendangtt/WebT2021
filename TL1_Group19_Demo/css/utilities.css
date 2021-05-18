@@ -14,6 +14,35 @@
     height: 100%;
   }
 
+  /*Alert*/
+  .alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+
+  .alert i {
+    margin-right: 10px;
+  }
+
+  .alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+  }
+  /*table*/
+  #zeitplan{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-color: grey;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #zeitplan tr td {
+    border-color: grey;
+    border: 1px solid darkgray;
+  }
+  /*Grid*/
   .grid {
     display: grid;
     grid-template-columns:40% 60%;
@@ -23,13 +52,28 @@
     height: 100%;
   }
 
+  .grid1 {
+    display: grid;
+    grid-template-columns:30% 70%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .card {
     background-color: #fff;
     color: #333;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 50px;
     margin: 10px;
+    
   }
 
   .docs-main my-4{
@@ -54,3 +98,14 @@
   .btn:hover {
     transform: scale(0.98);
   }
+
+  .bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: #333;
+  }
+
+  .p-3 {
+    padding: 2rem;
+  }
+
+ 
