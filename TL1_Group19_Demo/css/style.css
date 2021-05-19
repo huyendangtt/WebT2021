@@ -193,6 +193,32 @@ nav ul li:hover .dropdown-content {
     padding-left: 10px;
   }
 
+/*Klausur*/
+.klausur-main .grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.klausur-main .grid > *:first-child{
+    grid-column: 1/ span 3  ;
+}
+
+.klausur-main i{
+    margin-right: 20px;
+}
+
+.klausur-main .card{
+    height: 200px;
+}
+
+.klausur-main .flex a{
+    margin: auto 5px;
+}
+
+.klausur-main .flex a:hover{
+    font-weight: bold;
+    border-bottom:1px black solid ;
+}
+
 
 /*Footer*/
 
