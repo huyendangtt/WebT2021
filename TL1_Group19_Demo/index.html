@@ -17,13 +17,15 @@
         <!--Navbar-->
         <div class="navbar">
             <div class="container flex">
-                <h1 class="logo">Web-Tech.</h1>
+                <h1 class="logo">
+                    <a href="index.html">Web.Tech</a>
+                </h1>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Hompage</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="infos.html">Infos zum Modul</a></li>
-                        <li>
-                            <a href="kapitels.html">Kapitels Übersicht</a>
+                        <li class="dropdown">
+                            <a href="kapitels.html">Kapitels</a>
                             <ul class="dropdown-content">
                                 <li><a href="kapitel01.html">Das Web</a></li>
                                 <li><a href="kapitel02.html">HTML & CSS</a></li>
@@ -35,7 +37,7 @@
             </div>
         </div>
 
-        <!-- Showcase-->
+    <!-- Showcase-->
     <section class="showcase">
         <div class="container grid">
             <div class="showcase-text">
@@ -47,6 +49,90 @@
         <div class="showcase-img">
             <img src="images/cloud.png" alt="cloud">
         </div>
+        </div>
+    </section>
+
+    <!--Stats-->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1">
+                Welcome to the best platform for building applications of all types with modern architecture and scaling
+            </h3>
+
+            <div class="grid grid-3 text-center my-4">
+                <div class="scale_effect"><a href="#">
+                    <i class="fas fa-file-alt fa-5x"></i>
+                    <p class="text-secondary">Infos zum Modul</p></a>
+                </div>
+                <div class="scale_effect"><a href="#" >
+                    <i class="fas fa-laptop-code fa-5x"></i>
+                    <p class="text-secondary">Kapitels Übersicht</p></a>
+                </div>
+                <div class="scale_effect"><a href="#">
+                    <i class="fas fa-university fa-5x"></i>
+                    <p class="text-secondary">Alte Klausuren</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
     </body>
 
+    <!-- Languages -->
+    <section class="languages">
+        <h2 class="md text-center my-2">
+            Supported Languges
+        </h2>
+        <div class="container flex">
+            <div class="card">
+                <h4>HTML5</h4>
+                <img src="images/logos/html5.png" alt="">
+            </div>
+            <div class="card">
+                <h4>CSS</h4>
+                <img src="images/logos/css.png" alt="">
+            </div>
+            <div class="card">
+                <h4>JavaScript</h4>
+                <img src="images/logos/javascript.png" alt="">
+            </div>
+            <div class="card">
+                <h4>Node.js</h4>
+                <img src="images/logos/node.png" alt="">
+            </div>
+            <div class="card">
+                <h4>PHP</h4>
+                <img src="images/logos/php.png" alt="">
+            </div>
+            <div class="card">
+                <h4>Angular</h4>
+                <img src="images/logos/angular.png" alt="">
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Web.Tech</h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Infos zum Modul</a></li>
+                    <li><a href="#">Kapitels</a></li>
+                    <li><a href="#">Alte Klausuren</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
 </html>

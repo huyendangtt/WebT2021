@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Home Page</Title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">
+                <a href="index.html">Web.Tech</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="infos.html">Infos zum Modul</a></li>
+                    <li class="dropdown">
+                        <a href="kapitels.html">Kapitels</a>
+                        <ul class="dropdown-content">
+                            <li><a href="kapitel01.html">Das Web</a></li>
+                            <li><a href="kapitel02.html">HTML & CSS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="alte-klausur.html">Alte Klausuren</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="kap2-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="lg">Kapitels 2: HTML & CSS</h1>
+                <p class="lead">Die Kurzreferenz soll beim Lernen von HTML5 und CSS unterstützen und als Spickzettel für
+                    HTML-Befehle und
+                    CSS Anweisungen dienen. Es wurden hier nur bewusst aktuelle Befehle (Doctype HTML5) aufgenommen.
+                </p>
+            </div>
+            <img src="images/docs.png" alt="Documents">
+        </div>
+    </section>
+</body>
+
+<!--Kapitels 2 main-->
+<section class="kap2-main my-4">
+    <div class="container grid">
+        <div class="card">
+            <h2 class="text-secondary">HTML (Hypertext Markup Language)</h2>
+            <ul>
+                <li>
+                    <div>
+                        <details>
+                            <summary>
+                                <h3 class="text-third"> Was ist HTML?</h3>
+                            </summary><br>
+                            <p>    Per Definition versteht man unter HTML eine einheitliche, textbasierte
+                                Auszeichnungssprache. Sie
+                                besteht aus einfachen Auszeichnungselementen, den sogenannten <b>„Tags“</b> als auch
+                                inhaltsleeren
+                                Elementen wie etwa.</p>
+                            <p>    HTML steht als Abkürzung für <b>„Hypertext Markup Language“</b>. Sie macht
+                                Browsern eine Interpretation und Anzeige sowie das Verknüpfen von Webseiten möglich. Im
+                                aktuellen Standard nutzt man XHTML und HTML5 um insbesondere Suchmaschinen-optimierte
+                                und
+                                User-orientierte Webseiten mit allen nötigen Elementen zu erstellen. Auch das responsive
+                                Design
+                                und verschiedene Auszeichnungen innerhalb des Codes sind relevant für das
+                                Suchmaschinenranking.
+                            </p>
+                        </details>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <details>
+                    <h3>Wie sieht ein Grundgerüst in HTML aus?</h3>
+                    <p>Per Definition versteht man unter HTML eine einheitliche, textbasierte Auszeichnungssprache. Sie
+                        besteht
+                        aus einfachen Auszeichnungselementen, den sogenannten „Tags“ als auch inhaltsleeren Elementen
+                        wie etwa
+                        <br>. HTML steht als Abkürzung für <b>„Hypertext Markup Language“</b>. Sie macht Browsern eine
+                        Interpretation
+                        und Anzeige sowie das Verknüpfen von Webseiten möglich. Im aktuellen Standard nutzt man XHTML
+                        und HTML5
+                        um insbesondere Suchmaschinen-optimierte und User-orientierte Webseiten mit allen nötigen
+                        Elementen zu
+                        erstellen. Auch das responsive Design und verschiedene Auszeichnungen innerhalb des Codes sind
+                        relevant
+                        für das Suchmaschinenranking.
+                    </p>
+                </details>
+                </div>
+                </li>
+                <li>
+                    <h3> Wie sieht ein Grundgerüst in HTML aus?</h3>
+                    <ul>
+                        <li>&#60;!DOCTYPE html &#62;: Definiert die Art des Dokuments</li>
+                        <li>&#60;html &#62;: Ist einziges Wurzelelement</li>
+                        <li>&#60;head &#62;: Titel, Metadaten, JavaScript, CSS</li>
+                        <li>&#60;body&#62;: Weitere HTML5-Element, Text</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3> Was sind die wichtigsten HTML-Tags?</h3>
+                    <ol>
+                        <li>&#60;a href&#62; Linktext &#60;/a&#62; <br> Ermöglicht das Setzen von Links auf der Webseite
+                            und
+                            ist die eigentliche Grundlage des WWW.</li>
+                        <li>&#60;h1&#62; Erste Übershrift &#60;/h1&#62; <br> Erleichtert den Einstieg für die Leser der
+                            Webseite
+                            und ist essentiell für die SEO-Arbeit. </li>
+                        <li>&#60;b&#62; Fetter Text &#60;/b&#62; <br> Kennzeichnet wichtiges in fetter Schrift. Hilft
+                            Webseitenbesuchern das Wichtige sofort zu erfassen. </li>
+                        <li>&#60;table&#62; Tabelle &#60;/table&#62; <br> Ermöglicht das Platzieren einer Tabelle.
+                            Wichtig in
+                            diesem Zusammenhang sind auch &#60;tr&#62; &#60;td&#62; für Zeilen und Spalten.</li>
+                        <li>&#60;ul&#62; und &#60;li&#62; <br> Mit diesen Tags erzeugt man unsortierte und sortierte
+                            Listen.
+                            Diese helfen Inhalte leicht erfassbar zu machen. </li>
+                    </ol>
+                </li>
+                <li>
+                    <h3>Strukturierung von Webseiten</h3>
+                    <ul>
+                        <li>Früher: Tabellen</li>
+                        <li>Danach: &#60;div&#62;-Container</li>
+                        <li>HTML5: Ermöglicht Interpretation von Inhalten durch Nutzung spezifischer Tags.</li>
+                        <img src="images/Bilder2.png" alt="HTML Layout Elements">
+                        <p><a href="https://www.w3schools.com/html/html_layout.asp">Quelle:
+                                https://www.w3schools.com/html/html_layout.asp</a></p>
+                    </ul>
+                </li>
+                <li>
+                    <h3> WebStorage</h3>
+                    <p>Storage Interface für Speicherung von Elementen.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="footer bg-dark py-5">
+    <div class="container grid grid-3">
+        <div>
+            <h1>Web.Tech</h1>
+            <p>Copyright &copy; 2020</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Infos zum Modul</a></li>
+                <li><a href="#">Kapitels</a></li>
+                <li><a href="#">Alte Klausuren</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
+
+</html>
