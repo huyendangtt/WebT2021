@@ -56,20 +56,67 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* Table content*/
+  .card .content-table {
+
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+    }
+
+    .content-table th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    .content-table tr:nth-child(even){background-color: #f2f2f2}
+
+    .content-table th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
   .text-center {
     text-align: center;
   }
 
+  ul .showlist_square {
+    list-style-type: square;
+  }
+
+  ul .showlist_circle{
+    list-style-type: circle;
+  }
+  /*Text color*/
+
+.text-primary {
+  color: var(--primary-color);
+}
   .text-secondary {
     color: var(--secondary-color);
     font-weight: bold;
     font-size: 1.5rem;
   }
+  .text-dark {
+    color: var(--dark-color);
+  }
 
+  .text-light {
+    color: var(--light-color);
+  }
+  text-strong {
+    color: var(--dark-color);
+    font-weight: bold;
+  }
+
+text-quelle {
+  color: var(--dark-color);
+  font-style: italic;
+}
   .text-third {
     color: var(--third-color);
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   /*Background & colored buttons*/
