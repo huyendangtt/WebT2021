@@ -14,6 +14,25 @@
     height: 100%;
   }
 
+/*Alert*/
+
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
+
   .grid {
     display: grid;
     grid-template-columns:40% 60%;

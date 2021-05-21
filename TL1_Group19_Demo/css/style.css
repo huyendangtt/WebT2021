@@ -167,6 +167,50 @@ nav ul li:hover .dropdown-content {
     transform: translate(-15px);
 }
 
+/*Allgemein*/
+.allgemein-head img{
+    width: 200px;
+    justify-self:end;
+}
+
+.allgemein-main h2{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.allgemein-main h3 {
+    margin: 20px 0;
+}
+
+#zeitplan td, #zeitplan th {
+    border: 1px solid #ddd;;
+}
+
+#zeitplan td:nth-child(odd){
+    font-weight: bold;
+}
+
+.allgemein-main .level-1{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.allgemein-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.allgemein-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+}
+
+.allgemein-main a:hover {
+    font-weight: bold;
+}
+
 /* Kapitels*/
 /* Kapitels 02*/
 .kap2-head img {
