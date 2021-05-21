@@ -168,6 +168,7 @@ nav ul li:hover .dropdown-content {
 }
 
 /* Kapitels*/
+/* Kapitels 02*/
 .kap2-head img {
     width: 200px;
     justify-self: flex-end;
@@ -193,7 +194,51 @@ nav ul li:hover .dropdown-content {
     padding-left: 10px;
   }
 
+/* Kapitels 01*/
+.kap1-head img {
+    justify-self: flex-end;
+}
+
+.kap1-main h3{
+    color: var(--primary-color);
+}
+.kap1-main card image{
+    height: 300px;
+}
+
+.kap1-main .my-1{  
+    list-style:square;
+    margin: 1rem 1rem;
+}
+
+.kap1-main .titel{
+    font-weight: bold;
+}
+
+.kap1-main .my-2{
+    list-style: circle;
+    margin: 1rem 2rem;
+}
+
+.kap1-main .card>i {
+    margin-right: 20px;
+}
+
+.kap1-main .grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+}
+
+ .kap1-main details p{
+    padding-left: 10px;
+  }
+
 /*Klausur*/
+
+.klausur-head img{
+    width: 200px;
+    justify-self: flex-end;
+}
 .klausur-main .grid{
     grid-template-columns: repeat(3, 1fr);
 }
