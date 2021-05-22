@@ -14,9 +14,28 @@
     height: 100%;
   }
 
+/*Alert*/
+
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
+
   .grid {
     display: grid;
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:40% 60%;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -31,6 +50,11 @@
     padding: 20px;
     margin: 10px;
   }
+
+  .docs-main my-4{
+    margin: 10px;
+  }
+
   .btn {
     display: inline-block;
     padding: 10px 30px;

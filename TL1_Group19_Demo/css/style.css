@@ -167,7 +167,52 @@ nav ul li:hover .dropdown-content {
     transform: translate(-15px);
 }
 
+/*Allgemein*/
+.allgemein-head img{
+    width: 200px;
+    justify-self:end;
+}
+
+.allgemein-main h2{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.allgemein-main h3 {
+    margin: 20px 0;
+}
+
+#zeitplan td, #zeitplan th {
+    border: 1px solid #ddd;;
+}
+
+#zeitplan td:nth-child(odd){
+    font-weight: bold;
+}
+
+.allgemein-main .level-1{
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.allgemein-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.allgemein-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+}
+
+.allgemein-main a:hover {
+    font-weight: bold;
+}
+
 /* Kapitels*/
+/* Kapitels 02*/
 .kap2-head img {
     width: 200px;
     justify-self: flex-end;
@@ -192,6 +237,76 @@ nav ul li:hover .dropdown-content {
  .kap2-main details p{
     padding-left: 10px;
   }
+
+/* Kapitels 01*/
+.kap1-head img {
+    justify-self: flex-end;
+}
+
+.kap1-main h3{
+    color: var(--primary-color);
+}
+.kap1-main card image{
+    height: 300px;
+}
+
+.kap1-main .my-1{  
+    list-style:square;
+    margin: 1rem 1rem;
+}
+
+.kap1-main .titel{
+    font-weight: bold;
+}
+
+.kap1-main .my-2{
+    list-style: circle;
+    margin: 1rem 2rem;
+}
+
+.kap1-main .card>i {
+    margin-right: 20px;
+}
+
+.kap1-main .grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+}
+
+ .kap1-main details p{
+    padding-left: 10px;
+  }
+
+/*Klausur*/
+
+.klausur-head img{
+    width: 200px;
+    justify-self: flex-end;
+}
+.klausur-main .grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.klausur-main .grid > *:first-child{
+    grid-column: 1/ span 3  ;
+}
+
+.klausur-main i{
+    margin-right: 20px;
+}
+
+.klausur-main .card{
+    height: 200px;
+}
+
+.klausur-main .flex a{
+    margin: auto 5px;
+}
+
+.klausur-main .flex a:hover{
+    font-weight: bold;
+    border-bottom:1px black solid ;
+}
 
 
 /*Footer*/
