@@ -1,125 +1,142 @@
 /*Utilities*/
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-  }
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
 
-  .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns:2fr 1fr;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+/*Alert*/
 
-  .card {
-    background-color: #fff;
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
-  }
-  .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-  }
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
 
-  .btn-outline {
-    background-color: transparent;
-    border: 1px #fff solid;
-  }
+.alert i {
+  margin-right: 10px;
+}
 
-  .btn:hover,
-  .scale_effect:hover,
-  .navbar .logo:hover {
-    transform: scale(0.96);
-  }
+.alert-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
 
-  .grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
 
-  /* Table content*/
-  .card .content-table {
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
-      border-collapse: collapse;
-      width: 80%;
-      margin: auto;
-    }
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
 
-    .content-table th, td {
-      text-align: left;
-      padding: 8px;
-    }
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
 
-    .content-table tr:nth-child(even){background-color: #f2f2f2}
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
 
-    .content-table th {
-      background-color: #4CAF50;
-      color: white;
-    }
+.btn:hover, .scale_effect:hover, .navbar .logo:hover {
+  transform: scale(0.96);
+}
 
-  .text-center {
-    text-align: center;
-  }
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
 
-  ul .showlist_square {
-    list-style-type: square;
-  }
+/* Table content*/
 
-  ul .showlist_circle{
-    list-style-type: circle;
-  }
-  /*Text color*/
+.card .content-table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+.content-table th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+.content-table tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.content-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*Text color*/
 
 .text-primary {
   color: var(--primary-color);
 }
-  .text-secondary {
-    color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  .text-dark {
-    color: var(--dark-color);
-  }
 
-  .text-light {
-    color: var(--light-color);
-  }
-  text-strong {
-    color: var(--dark-color);
-    font-weight: bold;
-  }
+.text-secondary {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+text-strong {
+  color: var(--dark-color);
+  font-weight: bold;
+}
 
 text-quelle {
   color: var(--dark-color);
   font-style: italic;
 }
-  .text-third {
-    color: var(--third-color);
-    font-weight: bold;
-    font-size: 1rem;
-  }
 
-  /*Background & colored buttons*/
+.text-third {
+  color: var(--third-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*Background & colored buttons*/
 
 .bg-primary, .btn-primary {
   background-color: var(--primary-color);

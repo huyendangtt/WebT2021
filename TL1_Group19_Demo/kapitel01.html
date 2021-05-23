@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Home Page</Title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">
+                <a href="index.html">Web.Tech</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="infos.html">Infos zum Modul</a></li>
+                    <li class="dropdown">
+                        <a href="kapitels.html">Kapitels</a>
+                        <ul class="dropdown-content">
+                            <li><a href="kapitel01.html">Das Web</a></li>
+                            <li><a href="kapitel02.html">HTML & CSS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="klausur.html">Alte Klausuren</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Head-->
+    <section class="content-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">Das Web</h1>
+                <p class="lead">
+                    Inhalt: Einführung, Architektur, Protokoll usw...
+                </p>
+            </div>
+            <img src="images/server.png" alt="Server">
+        </div>
+
+    </section>
+
+    <!--Sub Head-->
+    <section class="content-sub-head bg-light py-3">
+        <div class="container grid">
+            <div>
+                <h1 class="md">Das Grundprinzip des World Wide Web</h1>
+            </div>
+            <img src="images/www.png" alt="World Wide Web">
+        </div>
+    </section>
+
+
+    <!--Kapitels 01 main-->
+    <section class="content-main my-4">
+        <div class="container grid">
+            <div class="card">
+                <h2 class="text-secondary">Komponenten der frühen Technik</h2>
+                <h3 clasS="text-third">wenige fundamentale Komponenten:</h3>
+                <ul class="showlist_square">
+                    <li>
+                        <text-strong>Serverprogramm</text-strong>
+                        <p>welches auf Anfragen reagiert und die entsprechenden Antworten
+                            generiert</p>
+                    </li>
+                    <li>
+                        <text-strong>Clientprogramm</text-strong>
+                        <ul class="showlist_circle">
+                            <li>welches vom Server diese Informationen anfordert</li>
+                            <li>die Rückantwort zur Anzeige bringt</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <text-strong>Protokollfamilie</text-strong>
+                        <ul class="showlist_circle">
+                            <li>welche die Kommunikation zwischen Server und Client festlegt</li>
+                            <li>hinzu kommt das Adressierungsschema der URL bzw. URI</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <text-strong>Auszeichnungssprache</text-strong>
+                        <p>für die Codierung der anzuzeigenden Information.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container grid">
+            <div class="card">
+                <h2 class="text-secondary">Client/Server-Prinzip</h2>
+                <ul class="showlist_square">
+                    <li>Browser spielt die Rolle eines
+                        Web-Clients, News-Clients …</li>
+                    <li>Internet-Dienste arbeiten nach
+                        dem Client/Server-Prinzip</li>
+                    <li>Laden eines HTML-Dokuments: Lieferung dieser Ressource</li>
+                    <li>Sowohl Client als auch Server sind
+                        ihrer Natur nach Programme oder
+                        besser Prozesse</li>
+                    <li>Server wartet rund um die Uhr auf
+                        Anfragen von Clients.</li>
+                    <li>Kommunikation wird grundsätzlich
+                        vom Client initiiert</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container grid">
+            <div class="card">
+                <h2 class="text-secondary">Infrastruktur</h2>
+                <ul class="showlist_square">
+                    <li>Kommunikation Client: Server unter Nutzung der Internet-Infrastruktur
+                        <p>TCP/IP-Protokollfamilie (Protokolle TCP und IP).</p>
+                    </li>
+                    <li>Charakteristika des Internet Protokolls IP:
+                        <p>paketorientiert, verbindungslos, unzuverlässig</p>
+                    </li>
+                    <li>IP = Vermittlungsschicht: Daten an richtigen Rechner leiten</li>
+                    <li>IP erledigt auch die Aufteilung der zu übertragenden Daten in kleine Pakete
+                        und die Adressierung des Zielrechners</li>
+                    <li>Transmission Control Protocol TCP bildet die Übertragungsschicht</li>
+                    <ul class="showlist_circle">
+                        <li>für das korrekte Zusammensetzen der Pakete beim Adressaten verantwortlich</li>
+                        <li>Retransmission verloren gegangener Pakete</li>
+                    </ul>
+                    <li>TCP führt auch das Konzept der Ports ein:</li>
+                    <ul class="showlist_circle">
+                        <li>Verbindungspunkt zu Programmen / Prozessen am Zielrechner</li>
+                        <li>IP adressiert (nur) den Zielrechner als Ganzes</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="container grid">
+            <div class="card">
+                <h2 class="text-secondary">Internet Protocol (IP)</h2>
+                <ul class="showlist_square">
+                    <li>regelt die Kommunikation zwischen zwei Rechnern ohne vorherigen
+                        Verbindungsaufbau auf der Vermittlungsschicht</li>
+                    <li>Keine Mechanismen der Fehlererkennung und -korrektur</li>
+                    <li>Zwei Versionen: IPv4 und IPv6 (größerer Adressraum, IPSec …)</li>
+                    <li>IPv4</li>
+                    <ul class="showlist_circle">
+                        <li>Bekannt durch Schema der IP-Adressen bestehend aus 4
+                            Gruppen/Bytes</li>
+                        <li>z. B. 141.13.16.227</li>
+                    </ul>
+                    <li>Beziehung zwischen Namen und Netzwerkadresse regelt der
+                        Domain Name Service (DNS)</li>
+                    <li>Da für jede Zahl nur 8 Bit zur Verfügung stehen, gibt es insgesamt</li>
+                    <ul class="showlist_circle">
+                        <li>𝑁 = 2^32 = 4.294.967.296 Netzwerkadressen</li>
+                        <li>Davon einige Sonderadressen (z. B. 127.0.0.1 für localhost)</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="container grid">
+            <div class="card">
+                <h2 class="text-secondary">Domain Name Service: DNS</h2>
+                <ul class="showlist_square">
+                    <li>verteilter hierarchischer Verzeichnisdienst</li>
+                    <li>verwaltet den Namensraum des Internets</li>
+                    <li>in Zonen unterteilt → unabhängige Administratoren zuständig</li>
+                    <li>Hauptsächlich:</li>
+                    <ul class="showlist_circle">
+                        <li>Umsetzung von Domainnamen in IP-Adressen („forward lookup“)</li>
+                        <li>vergleichbar Telefonbuch: Namen → Telefonnummer</li>
+                    </ul>
+                    <img class="smallPics" src="images/DMS.jpg" alt="">
+                    <p><a href="https://nmap.org/download.html">
+                            <text-quelle>Quelle: https://nmap.org/download.html</text-quelle>
+                        </a></p>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Web.Tech</h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="infos.html">Infos zum Modul</a></li>
+                    <li><a href="kapitels.html">Kapitels</a></li>
+                    <li><a href="klausur.html">Alte Klausuren</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</html>

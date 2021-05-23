@@ -32,14 +32,14 @@
                             <li><a href="kapitel02.html">HTML & CSS</a></li>
                         </ul>
                     </li>
-                    <li><a href="alte-klausur.html">Alte Klausuren</a></li>
+                    <li><a href="klausur.html">Alte Klausuren</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
     <!-- Head -->
-    <section class="kap2-head bg-primary py-3">
+    <section class="content-head bg-primary py-3">
         <div class="container grid">
             <div>
                 <h1 class="md">Kapitels 2: HTML & CSS</h1>
@@ -51,252 +51,295 @@
             <img src="images/docs.png" alt="Documents">
         </div>
     </section>
-</body>
 
-<!--Kapitels 2 main-->
-<section class="kap2-main my-4">
-    <!--HTML5-->
-    <div class="container grid">
-        <div class="card">
-            <h2 class="text-secondary">HTML (Hypertext Markup Language)</h2>
-            <ul>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                                <h3 class="text-third"> Was ist HTML?</h3>
-                            </summary>
-                            <p> Per Definition versteht man unter HTML eine einheitliche, textbasierte
-                                Auszeichnungssprache. Sie
-                                besteht aus einfachen Auszeichnungselementen, den sogenannten <text-strong>„Tags“</text-strong> als auch
-                                inhaltsleeren
-                                Elementen wie etwa.</p>
-                            <p> HTML steht als Abkürzung für <text-strong>„Hypertext Markup Language“</text-strong>. Sie macht
-                                Browsern eine Interpretation und Anzeige sowie das Verknüpfen von Webseiten möglich. Im
-                                aktuellen Standard nutzt man XHTML und HTML5 um insbesondere Suchmaschinen-optimierte
-                                und
-                                User-orientierte Webseiten mit allen nötigen Elementen zu erstellen. Auch das responsive
-                                Design
-                                und verschiedene Auszeichnungen innerhalb des Codes sind relevant für das
-                                Suchmaschinenranking.
-                            </p>
-                        </details>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                                <h3 class="text-third"> Wie sieht ein Grundgerüst in HTML aus?</h3>
-                            </summary>
-                            <ul class="showlist_square">
-                                <li><text-strong>&#60;!DOCTYPE html &#62;</text-strong>: Definiert die Art des Dokuments</li>
-                                <li><text-strong>&#60;html &#62;</text-strong>: Ist einziges Wurzelelement</li>
-                                <li><text-strong>&#60;head &#62;</text-strong>: Titel, Metadaten, JavaScript, CSS</li>
-                                <li><text-strong>&#60;body&#62;</text-strong>: Weitere HTML5-Element, Text</li>
-                            </ul>
-                        </details>
-                    </div>
-                </li>
-                <li>
-                <div>
-                    <details>
-                        <summary>
-                            <h3 class="text-third"> Was sind die wichtigsten HTML-Tags?</h3>
-                        </summary>
-                        <ul>
-                            <li>
-                                <pre><code>&#60;a href&#62; Linktext &#60;/a&#62;</code></pre>
-                                <p>Ermöglicht das Setzen von Links auf der Webseite und
-                                ist die eigentliche Grundlage des WWW.</p>
-                            </li>
-                            <li>
-                                <pre><code>&#60;h1&#62; Erste Übershrift &#60;/h1&#62;</code></pre>
-                                <p>Erleichtert den Einstieg für die Leser
-                                der
-                                Webseite
-                                und ist essentiell für die SEO-Arbeit. </p>
-                            </li>
-                            <li><pre><code>&#60;b&#62; Fetter Text &#60;/b&#62; </code></pre>
-                                <p>Kennzeichnet wichtiges in fetter Schrift.
-                                Hilft
-                                Webseitenbesuchern das Wichtige sofort zu erfassen. </p>
-                            </li>
-                            <li>
-                                <pre><code>&#60;table&#62; Tabelle &#60;/table&#62;</code></pre>
-                                <p>Ermöglicht das Platzieren einer Tabelle.
-                                Wichtig in
-                                diesem Zusammenhang sind auch <pre><code>&#60;tr&#62; &#60;td&#62;</code></pre> für Zeilen und Spalten.</p> </li>
-                            <li>
-                                <pre><code>&#60;ul&#62; und &#60;li&#62;</code></pre>
-                                <p>Mit diesen Tags erzeugt man unsortierte und sortierte
-                                Listen.
-                                Diese helfen Inhalte leicht erfassbar zu machen.</p>
-                            </li>
-                        </ul>
-                    </details>
-                </div>
-                </li>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                            <h3 class="text-third">Strukturierung von Webseiten</h3>
-                        </summary>
-                    <ul class="showlist_square">
-                        <li>Früher: Tabellen</li>
-                        <li>Danach: &#60;div&#62;-Container</li>
-                        <li><text-strong>HTML5</text-strong>: Ermöglicht Interpretation von Inhalten durch Nutzung spezifischer Tags.</li>
-                        <img class="bigPics" src="images/Bilder2.png" alt="HTML Layout Elements">
-                        <p><a href="https://www.w3schools.com/html/html_layout.asp">
-                            <text-quelle>Quelle:
-                                https://www.w3schools.com/html/html_layout.asp</text-quelle></a></p>
-                    </ul>
-                </details>
+    <!--Kapitels 2 main-->
+    <section class="content-main my-4">
+        <!--HTML5-->
+        <div class="container grid">
+            <div class="card">
+                <h2 class="text-secondary">HTML (Hypertext Markup Language)</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third"> Was ist HTML?</h3>
+                                </summary>
+                                <p> Per Definition versteht man unter HTML eine einheitliche, textbasierte
+                                    Auszeichnungssprache. Sie
+                                    besteht aus einfachen Auszeichnungselementen, den sogenannten <text-strong>„Tags“
+                                    </text-strong> als auch
+                                    inhaltsleeren
+                                    Elementen wie etwa.</p>
+                                <p> HTML steht als Abkürzung für <text-strong>„Hypertext Markup Language“</text-strong>.
+                                    Sie macht
+                                    Browsern eine Interpretation und Anzeige sowie das Verknüpfen von Webseiten möglich.
+                                    Im
+                                    aktuellen Standard nutzt man XHTML und HTML5 um insbesondere
+                                    Suchmaschinen-optimierte
+                                    und
+                                    User-orientierte Webseiten mit allen nötigen Elementen zu erstellen. Auch das
+                                    responsive
+                                    Design
+                                    und verschiedene Auszeichnungen innerhalb des Codes sind relevant für das
+                                    Suchmaschinenranking.
+                                </p>
+                            </details>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third"> Wie sieht ein Grundgerüst in HTML aus?</h3>
+                                </summary>
+                                <ul class="showlist_square">
+                                    <li>
+                                        <text-strong>&#60;!DOCTYPE html &#62;</text-strong>: Definiert die Art des
+                                        Dokuments
+                                    </li>
+                                    <li>
+                                        <text-strong>&#60;html &#62;</text-strong>: Ist einziges Wurzelelement
+                                    </li>
+                                    <li>
+                                        <text-strong>&#60;head &#62;</text-strong>: Titel, Metadaten, JavaScript, CSS
+                                    </li>
+                                    <li>
+                                        <text-strong>&#60;body&#62;</text-strong>: Weitere HTML5-Element, Text
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third"> Was sind die wichtigsten HTML-Tags?</h3>
+                                </summary>
+                                <ul>
+                                    <li>
+                                        <pre><code>&#60;a href&#62; Linktext &#60;/a&#62;</code></pre>
+                                        <p>Ermöglicht das Setzen von Links auf der Webseite und
+                                            ist die eigentliche Grundlage des WWW.</p>
+                                    </li>
+                                    <li>
+                                        <pre><code>&#60;h1&#62; Erste Übershrift &#60;/h1&#62;</code></pre>
+                                        <p>Erleichtert den Einstieg für die Leser
+                                            der
+                                            Webseite
+                                            und ist essentiell für die SEO-Arbeit. </p>
+                                    </li>
+                                    <li>
+                                        <pre><code>&#60;b&#62; Fetter Text &#60;/b&#62; </code></pre>
+                                        <p>Kennzeichnet wichtiges in fetter Schrift.
+                                            Hilft
+                                            Webseitenbesuchern das Wichtige sofort zu erfassen. </p>
+                                    </li>
+                                    <li>
+                                        <pre><code>&#60;table&#62; Tabelle &#60;/table&#62;</code></pre>
+                                        <p>Ermöglicht das Platzieren einer Tabelle.
+                                            Wichtig in
+                                            diesem Zusammenhang sind auch
+                                        <pre><code>&#60;tr&#62; &#60;td&#62;</code></pre> für Zeilen und Spalten.</p>
+                                    </li>
+                                    <li>
+                                        <pre><code>&#60;ul&#62; und &#60;li&#62;</code></pre>
+                                        <p>Mit diesen Tags erzeugt man unsortierte und sortierte
+                                            Listen.
+                                            Diese helfen Inhalte leicht erfassbar zu machen.</p>
+                                    </li>
+                                </ul>
+                            </details>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third">Strukturierung von Webseiten</h3>
+                                </summary>
+                                <ul class="showlist_square">
+                                    <li>Früher: Tabellen</li>
+                                    <li>Danach: &#60;div&#62;-Container</li>
+                                    <li>
+                                        <text-strong>HTML5</text-strong>: Ermöglicht Interpretation von Inhalten durch
+                                        Nutzung spezifischer Tags.
+                                    </li>
+                                    <img class="bigPics" src="images/Bilder2.png" alt="HTML Layout Elements">
+                                    <p><a href="https://www.w3schools.com/html/html_layout.asp">
+                                            <text-quelle>Quelle:
+                                                https://www.w3schools.com/html/html_layout.asp</text-quelle>
+                                        </a></p>
+                                </ul>
+                            </details>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third"> WebStorage</h3>
+                                </summary>
+                                <p>Storage Interface für Speicherung von Elementen.</p>
+                            </details>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third">Offline-Webanwendungen</h3>
+                                </summary>
+                                <p>Cache Manifest verlinken für Verbindungsabbruch.</p>
+                            </details>
+                        </div>
+                    </li>
+                </ul>
             </div>
-                </li>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                    <h3 class="text-third"> WebStorage</h3>
-                </summary>
-                    <p>Storage Interface für Speicherung von Elementen.</p>
-                </details></div>
-                </li>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                                <h3 class="text-third">Offline-Webanwendungen</h3>
-                            </summary>
-                            <p>Cache Manifest verlinken für Verbindungsabbruch.</p>
-                        </details>
-                    </div>
-                </li>
-            </ul>
         </div>
-    </div>
-    <!--CSS-->
-    <div class="container grid">
-        <div class="card">
-            <h2 class="text-secondary"> Cascading Stylesheets (CSS)</h2>
-            <ul>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                                <h3 class="text-third"> Was ist CSS?</h3>
-                            </summary>
-                            <ul>
-                                <li>Formatierungssprache für HTML (und XML). CSS liefert die Gestaltungsinformationen für den Inhalt.</li>
-                                <li>Eine CSS-Datei enthält also die Darstellungsinformationen, mit denen eine verknüpfte HTML-Struktur visuell gestaltet werden soll. Anstatt die Informationen über z.B. Schriftgröße, Farben, Layout etc. mit dem HTML-Inhalt zu mischen, werden all diese Informationen in eine oder wenige CSS-Dateien ausgelagert. So sind sie übersichtlicher und leichter zu pflegen.</li>
-                            </ul>
-                        </details>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                                <h3 class="text-third">Box-Modell</h3>
-                            </summary>
-                            <ul class="showlist_square">
-                                <li>Definiert die Berechnung der Breite und Höhe von Elementen</li>
-                                <li>Gesamtbreite eines Elements errechnet aus einer Addition:
-                                    <ul class="showlist_circle">
-                                        <li>der Breite des Elementinhalts (width)</li>
-                                        <li>des Innenabstands (padding)</li>
-                                        <li>der Rahmenstärke (border -width)</li>
-                                        <li>des Außenabstands (margin).</li>
-                                    </ul>
-                                </li>
-                                <li>Gilt analog für die Höhe (height)</li>
-                                <img class"smallPics" src="images/Bilder3.png" alt="CSS Box-Modell">
-                                <p><a href="https://commons.wikimedia.org/w/index.php?curid=34932417"><text-quelle>Quelle:Von Matthias Apsel – Eigenes Werk, CC0, https://commons.wikimedia.org/w/index.php?curid=34932417</text-quelle></a></p>
-                            </ul>
-                        </details>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                                <h3 class="text-third">Aufbau einer CSS-Regel</h3>
-                            </summary>
-                            <p>Eine CSS-Regel besteht aus dem <b>Selektor (selector)</b>, einer Liste von <b>Eigenschaften (property)</b> und deren konkreten <b>Werten (value)</b>. Wie bei allen „Computer-Sprachen“ muss man die exakte <b>Schreibweise</b> bis ins Detail beachten, damit keine Darstellungsfehler passieren. Achte also auf die Position der geschwungenen Klammern {}, des Doppelpunkts : und des Semikolons ;</p>
-             <p><b> Arten von Selektoren</b></p>
-             <table class="content-table">
-                 <tr>
-                     <th>Name</th>
-                     <th>Beispiel</th>
-                     <th>Erklärung</th>
-                 </tr>
-                 <tr>
-                     <td>Element-Selektor</td>
-                     <td>header</td>
-                     <td>Wählt das jeweilige HTML-Element aus, hier z.B.
-                        &#60;header&#62;…&#60;/header&#62;</td>
-                 </tr>
-                 <tr>
-                     <td>Mehrere Element-Selektoren</td>
-                     <td>h1, h2, h3</td>
-                     <td>Wählt alle genannten HTML-Elemente aus, hier also
-                        &#60;h1&#62;…&#60;/h1&#62;, &#60;h2&#62;…&#60;/h2&#62; und &#60;h3&#62;…&#60;/h3&#62;</td>
-                 </tr>
-                 <tr>
-                     <td>Verschachtelte Element-Selektoren</td>
-                     <td>header h2 </td>
-                     <td>Wählt nur die HTML-Elemente aus, die der Verschachtelung entsprechen. Hier also nur die h2-Elemente, die sich innerhalb des Elements header befinden
-                        &#60;header&#62;&#60;h2&#62;…&#60;/h2&#62;&#60;/header&#62;</td>
-                 </tr>
-                 <tr>
-                     <td>ID-Selektor</td>
-                     <td>#hauptartikel</td>
-                     <td>Wählt das HTML-Element aus, welches das id-Attribut hauptartikel hat
-                        &#60;article id=”hauptartikel”&#62;…&#60;/articel&#62;.
-                        Ein id-Attribut kann nur ein Mal pro HTML-Seite verwendet werden.</td>
-                 </tr>
-                 <tr>
-                     <td>class-Selektor</td>
-                     <td>.infobox</td>
-                     <td>Wählt die HTML-Elemente aus, welche das class-Attribut infobox haben.<br>
+        <!--CSS-->
+        <div class="container grid">
+            <div class="card">
+                <h2 class="text-secondary"> Cascading Stylesheets (CSS)</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third"> Was ist CSS?</h3>
+                                </summary>
+                                <ul>
+                                    <li>Formatierungssprache für HTML (und XML). CSS liefert die
+                                        Gestaltungsinformationen für den Inhalt.</li>
+                                    <li>Eine CSS-Datei enthält also die Darstellungsinformationen, mit denen eine
+                                        verknüpfte HTML-Struktur visuell gestaltet werden soll. Anstatt die
+                                        Informationen über z.B. Schriftgröße, Farben, Layout etc. mit dem HTML-Inhalt zu
+                                        mischen, werden all diese Informationen in eine oder wenige CSS-Dateien
+                                        ausgelagert. So sind sie übersichtlicher und leichter zu pflegen.</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third">Box-Modell</h3>
+                                </summary>
+                                <ul class="showlist_square">
+                                    <li>Definiert die Berechnung der Breite und Höhe von Elementen</li>
+                                    <li>Gesamtbreite eines Elements errechnet aus einer Addition:
+                                        <ul class="showlist_circle">
+                                            <li>der Breite des Elementinhalts (width)</li>
+                                            <li>des Innenabstands (padding)</li>
+                                            <li>der Rahmenstärke (border -width)</li>
+                                            <li>des Außenabstands (margin).</li>
+                                        </ul>
+                                    </li>
+                                    <li>Gilt analog für die Höhe (height)</li>
+                                    <img class"smallPics" src="images/Bilder3.png" alt="CSS Box-Modell">
+                                    <p><a href="https://commons.wikimedia.org/w/index.php?curid=34932417">
+                                            <text-quelle>Quelle:Von Matthias Apsel – Eigenes Werk, CC0,
+                                                https://commons.wikimedia.org/w/index.php?curid=34932417</text-quelle>
+                                        </a></p>
+                                </ul>
+                            </details>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third">Aufbau einer CSS-Regel</h3>
+                                </summary>
+                                <p>Eine CSS-Regel besteht aus dem <b>Selektor (selector)</b>, einer Liste von
+                                    <b>Eigenschaften (property)</b> und deren konkreten <b>Werten (value)</b>. Wie bei
+                                    allen „Computer-Sprachen“ muss man die exakte <b>Schreibweise</b> bis ins Detail
+                                    beachten, damit keine Darstellungsfehler passieren. Achte also auf die Position der
+                                    geschwungenen Klammern {}, des Doppelpunkts : und des Semikolons ;
+                                </p>
+                                <p><b> Arten von Selektoren</b></p>
+                                <table class="content-table">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Beispiel</th>
+                                        <th>Erklärung</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Element-Selektor</td>
+                                        <td>header</td>
+                                        <td>Wählt das jeweilige HTML-Element aus, hier z.B.
+                                            &#60;header&#62;…&#60;/header&#62;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mehrere Element-Selektoren</td>
+                                        <td>h1, h2, h3</td>
+                                        <td>Wählt alle genannten HTML-Elemente aus, hier also
+                                            &#60;h1&#62;…&#60;/h1&#62;, &#60;h2&#62;…&#60;/h2&#62; und
+                                            &#60;h3&#62;…&#60;/h3&#62;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Verschachtelte Element-Selektoren</td>
+                                        <td>header h2 </td>
+                                        <td>Wählt nur die HTML-Elemente aus, die der Verschachtelung entsprechen. Hier
+                                            also nur die h2-Elemente, die sich innerhalb des Elements header befinden
+                                            &#60;header&#62;&#60;h2&#62;…&#60;/h2&#62;&#60;/header&#62;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ID-Selektor</td>
+                                        <td>#hauptartikel</td>
+                                        <td>Wählt das HTML-Element aus, welches das id-Attribut hauptartikel hat
+                                            &#60;article id=”hauptartikel”&#62;…&#60;/articel&#62;.
+                                            Ein id-Attribut kann nur ein Mal pro HTML-Seite verwendet werden.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>class-Selektor</td>
+                                        <td>.infobox</td>
+                                        <td>Wählt die HTML-Elemente aus, welche das class-Attribut infobox haben.<br>
 
-                        &#60;aside class="infobox"&#62;…&#60;/aside&#62;.
+                                            &#60;aside class="infobox"&#62;…&#60;/aside&#62;.
 
-                        Im Gegensatz zum id-Attribut kann das class-Attribut mehrfach auf einer HTML-Seite vorkommen, man kann es benutzen, um mehrere Elemente zu einer Gruppe („Klasse“) zusammen zu fassen und gemeinsam zu gestalten.</td>
-                 </tr>
-                 <tr>
-                     <td>Pseudo-Klasse-Selektor</td>
-                     <td>:link <br>
-                         :visited <br>
-                         :hover<br></td>
-                    <td>Besondere Art von Selektor, der ein Element in einem bestimmten Zustand auswählt – meist in Kombination mit dem a-Element verwendet.<br>
-                        a:link gilt für einen nicht besuchten Link<br>
-                        a:visited gilt für einen besuchten Link<br>
-                        a:hover gilt für einen Link, solange der Mauszeiger darüber steht </td>
-                 </tr>
-             </table>
+                                            Im Gegensatz zum id-Attribut kann das class-Attribut mehrfach auf einer
+                                            HTML-Seite vorkommen, man kann es benutzen, um mehrere Elemente zu einer
+                                            Gruppe („Klasse“) zusammen zu fassen und gemeinsam zu gestalten.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pseudo-Klasse-Selektor</td>
+                                        <td>:link <br>
+                                            :visited <br>
+                                            :hover<br></td>
+                                        <td>Besondere Art von Selektor, der ein Element in einem bestimmten Zustand
+                                            auswählt – meist in Kombination mit dem a-Element verwendet.<br>
+                                            a:link gilt für einen nicht besuchten Link<br>
+                                            a:visited gilt für einen besuchten Link<br>
+                                            a:hover gilt für einen Link, solange der Mauszeiger darüber steht </td>
+                                    </tr>
+                                </table>
 
-                        </details>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <details>
-                            <summary>
-                                <h3 class="text-third">Responsive Webdesign</h3>
-                            </summary>
-                            <ul class="showlist_square">
-                                <li>gestalterischer und technischer Ansatz, so dass Websites auf Eigenschaften des benutzten Endgeräts reagieren</li>
-                                <li>betrifft Anordnung und Darstellung einzelner Elemente (Navigation, Seitenspalten, Text …)</li>
-                                <li> Technische Basis: HTML5, CSS3 und JavaScript.</li>
-                                <li>Größe des Gerätes selbst, Bildschirmauflösung, Orientierung (Hoch- oder Querformat), Eingabemöglichkeiten (Tastatur, Fingergeste [Touch], Sprache).</li>
-                            </ul>
-                        </details>
-                    </div>
-                </li>
-</section>
+                            </details>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <details>
+                                <summary>
+                                    <h3 class="text-third">Responsive Webdesign</h3>
+                                </summary>
+                                <ul class="showlist_square">
+                                    <li>gestalterischer und technischer Ansatz, so dass Websites auf Eigenschaften des
+                                        benutzten Endgeräts reagieren</li>
+                                    <li>betrifft Anordnung und Darstellung einzelner Elemente (Navigation,
+                                        Seitenspalten, Text …)</li>
+                                    <li> Technische Basis: HTML5, CSS3 und JavaScript.</li>
+                                    <li>Größe des Gerätes selbst, Bildschirmauflösung, Orientierung (Hoch- oder
+                                        Querformat), Eingabemöglichkeiten (Tastatur, Fingergeste [Touch], Sprache).</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </li>
+    </section>
+</body>
 
 <!--Footer-->
 <footer class="footer bg-dark py-5">
@@ -307,10 +350,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Infos zum Modul</a></li>
-                <li><a href="#">Kapitels</a></li>
-                <li><a href="#">Alte Klausuren</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="infos.html">Infos zum Modul</a></li>
+                <li><a href="kapitels.html">Kapitels</a></li>
+                <li><a href="klausur.html">Alte Klausuren</a></li>
             </ul>
         </nav>
         <div class="social">

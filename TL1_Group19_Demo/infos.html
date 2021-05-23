@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allgemeine zum Kurs</title>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">
+                <a href="index.html">Web.Tech</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="infos.html">Infos zum Modul</a></li>
+                    <li class="dropdown">
+                        <a href="kapitels.html">Kapitels</a>
+                        <ul class="dropdown-content">
+                            <li><a href="kapitel01.html">Das Web</a></li>
+                            <li><a href="kapitel02.html">HTML & CSS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="klausur.html">Alte Klausuren</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="allgemein-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h2 class="lead">Willkommen zum Kurs</h2>
+                <h1 class="md">Web-Technologien (MI-WebT-B) SS 2021</h1>
+            </div>
+            <img src="images/docs.png" alt="Documents">
+        </div>
+    </section>
+
+    <section class="allgemein-main my-4">
+        <div class="container grid">
+            <div class="card bg-light p-3">
+                <h3 class="my-2">Essentials</h3>
+                <nav>
+                    <ul>
+                        <li><a class="text-primary" href="#">Beschreibung</a></li>
+                        <li><a href="#">Über Lehrstuhl</a></li>
+                        <li><a href="#">Lehrnziele</a></li>
+                    </ul>
+                </nav>
+                <h3 class="my-2">Projekt / Forschung</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Seminare</a></li>
+                        <li><a href="#">Projekte</a></li>
+                        <li><a href="#">Forschung</a></li>
+                        <li><a href="#">Mehr</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card">
+
+                <h2 class="text-secondary">Dozenten</h2>
+                <p>für die Vorlesung: Prof. Dr. Andreas Henrich</p>
+                <p>für die Übung: Tobias Hirmer, M. Sc.; Leon Martin, M. Sc. und Martin Bullin, M. Sc.</p>
+                <div class="alert alert-success">
+                    <i class="fas fa-info"></i>Die Vorlesung wird in den ersten beiden Wochen der Vorlesungszeit jeweils
+                    zweimal abgehalten. Die Übungen beginnen erst in der dritten Woche der Vorlesungszeit.
+                </div>
+
+                <h3 class="text-third">Videos</h3>
+                <p>Ein kurzes Einführungsvideo</p>
+                <video class="input_video" controls>
+                    <source
+                        src="http://www.minf.uni-bamberg.de/recordings/ss2021/WebT/WebT_20210414a/WebT_20210414a.mp4"
+                        type="video/mp4">
+                </video>
+
+                <h3 class="text-third">Zeitplan</h3>
+                <table id="zeitplan">
+                    <tr>
+                        <td>Web Technologies</td>
+                        <td>6 ECTS / 180 h</td>
+                    </tr>
+                    <tr>
+                        <td>Vorlesung:</td>
+                        <td>22,5 Stunden (entspricht den 2 SWS Vorlesung)</td>
+                    </tr>
+                    <tr>
+                        <td>Vor- und Nachbereitung der Vorlesung: </td>
+                        <td>Ca 30 Stunden (inkl. Recherche und Studium zusätzlicher Quellen)</td>
+                    </tr>
+                    <tr>
+                        <td>Semesterbegleitendes Üben, Bearbeiten alter Klausuraufgaben,:</td>
+                        <td> ca. 30
+                            Stunden (inkl. 7,5 Stunden [= 1/3] der 2 SWS Übungsbetrieb)</td>
+                    </tr>
+                    <tr>
+                        <td>Bearbeiten der 3 Teilleistungen:</td>
+                        <td>ca. 60 Stunden (inkl. 15 Stunden [= 2/3] der 2 SWS
+                            Übungsbetrieb)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Prüfungsvorbereitung und Prüfung:</td>
+                        <td>ca. 37,5 Stunden (basierend auf dem bereits im obigen Sinne
+                            erarbeiteten Stoff)
+                        </td>
+                    </tr>
+                </table>
+
+                <h3 class="text-third">Modul: Web-Technologien</h3>
+                <ul>
+                    <li class="level-1">Inhalte:</li>
+                    <ul>
+                        <li>Nach einer Betrachtung der Grundlagen werden die verschiedenen Ebenen der
+                            Entwicklung von Web-Anwendungen von HTML und CSS über JavaScript und entsprechende
+                            Bibliotheken
+                            bis hin zur Serverseite und Frameworks oder Content Management Systemen betrachtet.</br>
+                            Aspekte der Sicherheit von Web-Anwendungen werden ebenfalls angesprochen. </li>
+                    </ul>
+                    <li class="level-1">Lehrnziele/Kompetenzen:</li>
+                    <ul>
+                        <li>Studierende sollen methodische, konzeptuelle und praktische Fähigkeiten und Fertigkeiten zur
+                            Erstellung von Web-Applikationen erwerben.</br>Besonderes Augenmerk wird dabei auf Web 2.0
+                            Technologien gelegt.</br>
+                            Die Studierenden sind nach Abschluss des Moduls in der Lage, Web- Anwendungen selbständig
+                            mit
+                            gängigen Frameworks und Techniken zu entwickeln.</li>
+                    </ul>
+                    <li class="level-1">Empfohlene Vorkenntnisse:</li>
+                    <ul>
+                        <li>Grundkenntnisse der Informatik und zu Medienformaten, wie Sie z. B. in den unten angegebenen
+                            Modulen erworben werden können.</br>Insbesondere sind auch Kenntnisse in einer imperativen
+                            oder
+                            objektorientierten Programmiersprache erforderlich.</br>Modul Einführung in Algorithmen,
+                            Programmierung
+                            und Software (DSG-EiAPS-B) - empfohlen
+                            Modul Einführung in die Medieninformatik (MI-EMI-B) - empfohlen</li>
+                    </ul>
+                    <li>Mehr weiteres im Modulhandbuch:</li>
+                </ul>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Web.Tech</h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="infos.html">Infos zum Modul</a></li>
+                    <li><a href="kapitels.html">Kapitels</a></li>
+                    <li><a href="klausur.html">Alte Klausuren</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</html>

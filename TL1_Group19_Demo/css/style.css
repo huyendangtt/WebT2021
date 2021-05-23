@@ -76,11 +76,11 @@ code, pre {
 nav ul li>.dropdown-content {
     display: none;
     position: absolute;
-  }
+}
 
 nav ul li:hover .dropdown-content {
     display: block;
-  }
+}
 
 .navbar .flex {
     justify-content: space-between;
@@ -112,12 +112,14 @@ nav ul li:hover .dropdown-content {
 .showcase-text {
     animation: slideInFromLeft 1s ease-in;
 }
+
 .showcase-img {
     position: relative;
     padding: 40px;
     justify-self: flex-end;
     animation: slideInFromRight 1s ease-in;
 }
+
 .showcase::before, .showcase::after {
     content: '';
     position: absolute;
@@ -174,52 +176,148 @@ nav ul li:hover .dropdown-content {
     transform: translate(-15px);
 }
 
-/* Kapitels*/
-.kap2-head img {
+/*Allgemein*/
+
+.allgemein-head img {
+    width: 200px;
+    justify-self: end;
+}
+
+.allgemein-main h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.allgemein-main h3 {
+    margin: 20px 0;
+}
+
+.allgemein-main .input_video {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#zeitplan td, #zeitplan th {
+    border: 1px solid #ddd;
+    ;
+}
+
+#zeitplan td:nth-child(odd) {
+    font-weight: bold;
+}
+
+.allgemein-main .level-1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+.allgemein-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.allgemein-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+}
+
+.allgemein-main a:hover {
+    font-weight: bold;
+}
+
+/* Contents*/
+
+.content-head img {
     width: 200px;
     justify-self: flex-end;
 }
 
-.kap2-main .card>i {
+.content-main .card>i {
     margin-right: 20px;
 }
 
-.kap2-main .grid {
+.content-main .grid {
     grid-template-columns: 1fr;
     padding: 30px;
 }
 
-.kap2-main details summary h3{
-    display:inline;
+.content-main details summary h3, .content-main h3 {
+    display: inline;
     list-style-position: inside;
     padding-left: 10px;
-    font-style:italic;
-  }
+    font-style: italic;
+}
 
- .kap2-main details p{
-    padding-left: 10px;
-  }
-  details ul li{
+.content-main details p, .content-main p {
+    padding-left: 15px;
+}
+
+details ul li, .content-main ul li {
     list-style-position: inside;
-    padding-left: 10px;
-  }
+    padding-left: 15px;
+}
 
-  .bigPics {
+.card .showlist_square {
+    list-style-type: square;
+}
+
+.card .showlist_circle {
+    list-style-type: circle;
+}
+
+.bigPics {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-  }
+}
 
-  .smallPics {
+.smallPics {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+}
 
-  /*kontakt*/
-  nput[type=text], input[type=email], textarea {
+/*Klausur*/
+
+.klausur-head img {
+    width: 200px;
+    justify-self: flex-end;
+}
+
+.klausur-main .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.klausur-main .grid>*:first-child {
+    grid-column: 1/ span 3;
+}
+
+.klausur-main i {
+    margin-right: 20px;
+}
+
+.klausur-main .card {
+    height: 200px;
+}
+
+.klausur-main .flex a {
+    margin: auto 5px;
+}
+
+.klausur-main .flex a:hover {
+    font-weight: bold;
+    border-bottom: 1px black solid;
+}
+
+/*kontakt*/
+
+input[type=text], input[type=email], textarea {
     width: 100%;
     background-color: #fff;
     padding: 13px 10px;
@@ -235,24 +333,22 @@ nav ul li:hover .dropdown-content {
     margin-bottom: 20px;
 }
 
-
 textarea {
     height: 260px;
     width: 100%;
     margin-bottom: 40px;
 }
 
-
 #datenschutz, #reason {
     cursor: pointer;
     width: auto;
 }
 
-label{
+label {
     margin-right: 10px;
 }
 
-input[type=submit]{
+input[type=submit] {
     background-color: #5d5d5d;
     border: none;
     border-radius: 5px;
@@ -265,7 +361,6 @@ input[type=submit]{
     cursor: pointer;
     margin-top: 8px;
     margin-bottom: 20px;
-
     transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -291,6 +386,7 @@ input[type=submit]:hover {
         transform: translateX(0);
     }
 }
+
 @keyframes slideInFromRight {
     0% {
         transform: translateX(100%);
@@ -321,8 +417,7 @@ input[type=submit]:hover {
 /*Tablets und under*/
 
 @media(max-width: 768px) {
-
-    .grid, .showcase .grid, .stats .grid {
+    .grid, .showcase .grid, .stats .grid, {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -334,14 +429,12 @@ input[type=submit]:hover {
         margin-top: 40px;
         animation: slideInFromTop 1s ease-in;
     }
-
     .showcase-img {
         justify-self: center;
         width: 90%;
         margin: auto;
         animation: slideInFromBottom 1s ease-in;
     }
-
 }
 
 /*Mobile*/
@@ -350,7 +443,6 @@ input[type=submit]:hover {
     .navbar {
         height: 110px;
     }
-
     .navbar .logo {
         width: 70%;
         justify-self: center;
@@ -362,5 +454,4 @@ input[type=submit]:hover {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
     }
-
 }
