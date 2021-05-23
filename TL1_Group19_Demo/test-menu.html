@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Title>Kapitels</Title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <title>Home Page</title>
 </head>
-
 <body>
-    <!--Navbar-->
     <header>
         <div class="nav-container">
             <input type="checkbox" name="" id="check">
@@ -53,8 +49,9 @@
                     </ul>
                 </div>
                 <div class="nav-buttons" style="--i: 1.8s">
-                    <a href="kontakt.html" rel="noopener noreferrer" class="nav-btn solid">Kontakt</a>
-                </div>
+                    <a href="#" rel="noopener noreferrer" class="nav-btn transparent">Log In</a>
+                    <a href="#" rel="noopener noreferrer" class="nav-btn solid">Sign Up</a>
+                </div>                
             </div>
             <div class="hamburger-menu-container">
                     <div class="hamburger-menu">
@@ -63,25 +60,22 @@
                 </div>
         </div>
     </header>
-
-    <!-- Head -->
-    <section class="content-head bg-primary py-3">
+    <!-- Showcase-->
+    <section class="showcase">
         <div class="container grid">
-            <div>
-                <h1 class="md">Kapitels Übersicht:</h1>
-                <ul>
-                    <li>
-                        <h2 class="lead">Kapitel 1: Das Web</h2>
-                    </li>
-                    <li>
-                        <h2 clasS="lead">Kapitel 2: HTML & CSS</h2>
-                    </li>
-                </ul>
+            <div class="showcase-text">
+                <h1>Web Technologien für Entwickler</h1>
+                <p>Das offene Web bietet unglaubliche Möglichkeiten für Entwickler, die Webseiten oder Onlineanwendungen
+                    erstellen möchten. Um diese Technologien voll ausschöpfen zu können, müssen Sie wissen, wie man sie
+                    verwendet.
+                </p>
+                <a href="https://developer.mozilla.org/de/docs/Web" class="btn btn-outline">Read More</a>
             </div>
-            <img src="images/docs.png" alt="Kapitels Übersicht">
+            <div class="showcase-img">
+                <img src="images/cloud.png" alt="cloud">
+            </div>
         </div>
     </section>
-
     <!--Stats-->
     <section class="stats">
         <div class="container">
@@ -91,81 +85,81 @@
             </h3>
 
             <div class="grid grid-3 text-center my-4">
-                <div class="scale_effect"><a href="kapitel01.html">
-                        <i class="fab fa-internet-explorer fa-5x"></i>
-                        <p class="text-secondary">Kapitel 1: Das Web</p>
+                <div class="scale_effect"><a href="#">
+                        <i class="fas fa-file-alt fa-5x"></i>
+                        <p class="text-secondary">Infos zum Modul</p>
                     </a>
                 </div>
-                <div class="scale_effect"><a href="kapitel02.html">
-                        <i class="fab fa-html5 fa-5x"></i>
-                        <p class="text-secondary">HTML</p>
+                <div class="scale_effect"><a href="#">
+                        <i class="fas fa-laptop-code fa-5x"></i>
+                        <p class="text-secondary">Kapitels Übersicht</p>
                     </a>
                 </div>
-                <div class="scale_effect"><a href="kapitel02.html">
-                        <i class="fab fa-css3-alt fa-5x"></i>
-                        <p class="text-secondary">CSS</p>
+                <div class="scale_effect"><a href="#">
+                        <i class="fas fa-university fa-5x"></i>
+                        <p class="text-secondary">Alte Klausuren</p>
                     </a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Languages -->
-    <section class="languages">
-        <h2 class="md text-center my-2">
-            Supported Languges
-        </h2>
-        <div class="container flex">
-            <div class="card">
-                <h4>HTML5</h4>
-                <img src="images/logos/html5.png" alt="HTML5">
-            </div>
-            <div class="card">
-                <h4>CSS</h4>
-                <img src="images/logos/css.png" alt="CSS">
-            </div>
-            <div class="card">
-                <h4>JavaScript</h4>
-                <img src="images/logos/javascript.png" alt="JavaScript">
-            </div>
-            <div class="card">
-                <h4>Node.js</h4>
-                <img src="images/logos/node.png" alt="Node JS">
-            </div>
-            <div class="card">
-                <h4>PHP</h4>
-                <img src="images/logos/php.png" alt="PHP">
-            </div>
-            <div class="card">
-                <h4>Angular</h4>
-                <img src="images/logos/angular.png" alt="Angular">
-            </div>
+<section class="languages">
+    <h2 class="md text-center my-2">
+        Supported Languges
+    </h2>
+    <div class="container flex">
+        <div class="card">
+            <h4>HTML5</h4>
+            <img src="images/logos/html5.png" alt="HTML5">
         </div>
+        <div class="card">
+            <h4>CSS</h4>
+            <img src="images/logos/css.png" alt="CSS">
+        </div>
+        <div class="card">
+            <h4>JavaScript</h4>
+            <img src="images/logos/javascript.png" alt="JavaScript">
+        </div>
+        <div class="card">
+            <h4>Node.js</h4>
+            <img src="images/logos/node.png" alt="NodeJS">
+        </div>
+        <div class="card">
+            <h4>PHP</h4>
+            <img src="images/logos/php.png" alt="PHP">
+        </div>
+        <div class="card">
+            <h4>Angular</h4>
+            <img src="images/logos/angular.png" alt="Angular">
+        </div>
+    </div>
 
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!--Footer-->
-    <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Web.Tech</h1>
-                <p>Copyright &copy; 2020</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="infos.html">Infos zum Modul</a></li>
-                    <li><a href="kapitels.html">Kapitels</a></li>
-                    <li><a href="klausur.html">Alte Klausuren</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
+<!--Footer-->
+<footer class="footer bg-dark py-5">
+    <div class="container grid grid-3">
+        <div>
+            <h1>Web.Tech</h1>
+            <p>Copyright &copy; 2020</p>
         </div>
-    </footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="infos.html">Infos zum Modul</a></li>
+                <li><a href="kapitels.html">Kapitels</a></li>
+                <li><a href="klausur.html">Alte Klausuren</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

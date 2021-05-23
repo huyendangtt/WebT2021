@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <Title>Home Page</Title>
+    <Title>Kapitel 01</Title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -16,27 +16,53 @@
 
 <body>
     <!--Navbar-->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">
-                <a href="index.html">Web.Tech</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="infos.html">Infos zum Modul</a></li>
-                    <li class="dropdown">
-                        <a href="kapitels.html">Kapitels</a>
-                        <ul class="dropdown-content">
-                            <li><a href="kapitel01.html">Das Web</a></li>
-                            <li><a href="kapitel02.html">HTML & CSS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="klausur.html">Alte Klausuren</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="nav-container">
+            <input type="checkbox" name="" id="check">
+            <div class="logo-container">
+                <h3 class="logo">
+                    <a href="index.html" target="_blank" rel="noopener noreferrer">Web<span>Tech</span></a>
+                </h3>
+            </div>
+            <div class="main-nav">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="infos.html">Infos</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="kapitels.html">Kapitels<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="kapitel01.html">Das Web</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="kapitel02.html">HTML & CSS</a>
+                                    </li>                                    
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="klausur.html">Alte Klausuren</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-buttons" style="--i: 1.8s">
+                    <a href="kontakt.html" rel="noopener noreferrer" class="nav-btn solid">Kontakt</a>
+                </div>
+            </div>
+            <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                        <div></div>
+                    </div>
+                </div>
         </div>
-    </div>
+    </header>
 
     <!--Head-->
     <section class="content-head bg-primary py-3">
@@ -210,5 +236,5 @@
             </div>
         </div>
     </footer>
-
+</body>
 </html>
