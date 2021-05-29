@@ -1,0 +1,38 @@
+[
+  {
+    "code": "deu",
+    "country": "Germany"
+  },
+  {
+    "code": "ita",
+    "country": "Italy"
+  },
+  {
+    "code": "esp",
+    "country": "Spain"
+  },
+  {
+    "code": "fra",
+    "country": "France"
+  },
+  {
+    "code": "gbr",
+    "country": "United Kingdom"
+  },
+  {
+    "code": "dnk",
+    "country": "Denmark"
+  },
+  {
+    "code": "bel",
+    "country": "Belgium"
+  },
+  {
+    "code": "swe",
+    "country": "Sweden"
+  },
+  {
+    "code": "usa",
+    "country": "United States of America"
+  }
+]
