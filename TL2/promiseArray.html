@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealing with Promises In an Array with async/await</title>
+</head>
+<body>
+    <h1>Dealing with Promises In an Array with async/await</h1>
+    <h2>Wait for all promises to complete with Promise.all()</h2>
+    <pre>
+        (async function() {
+            const asyncFunctions = [
+              resolveInTwoSeconds(),
+              resolveInThreeSeconds(),
+              resolveInFiveSeconds()
+            ];
+            const results = await Promise.all(asyncFunctions);
+            // outputs `[2, 3, 5]` after five seconds
+            console.log(results);
+          })();
+    </pre>
+
+    <h2>Wait for at least one promise to complete with Promise.race()</h2>
+    <pre>
+        (async function() {
+            const asyncFunctions = [
+              resolveInTwoSeconds(),
+              resolveInThreeSeconds(),
+              resolveInFiveSeconds()
+            ];
+            const result = await Promise.race(asyncFunctions);
+            // outputs `2` after two seconds
+            console.log(result);
+          })();
+    </pre>
+</body>
+<script type="text/javascript">
+    const resolveInTwoSeconds = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => resolve({
+                'code': 'deu',
+                'case': 10000,
+            }), 2000);
+        });
+    };
+
+    const resolveInThreeSeconds = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => reject(new Error("Cannot find an answer!")), 3000);
+        });
+    };
+
+    const resolveInFiveSeconds = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => resolve({
+                'code': 'uk',
+                'case': 30000,
+            }), 5000);
+        });
+    };
+
+    async function awaitWithPromisesAll() {
+        const asyncFunctions = [
+            resolveInFiveSeconds(),
+            resolveInTwoSeconds(),
+            resolveInThreeSeconds(),
+        ];
+
+        const results = await Promise.all(asyncFunctions);
+        console.log(results);
+    }
+    
+    async function awaitWithPromiseRace() {
+        const asyncFunctions = [
+            resolveInFiveSeconds(),
+            resolveInTwoSeconds(),
+            resolveInThreeSeconds(),
+        ];
+
+        const result = await Promise.race(asyncFunctions);
+        console.log(result);
+    }
+
+    async function awaitPromiseOneByOne() {
+        const asyncFunctions = [
+            resolveInThreeSeconds,
+            resolveInTwoSeconds,
+            resolveInFiveSeconds,
+        ];
+
+        await asyncFunctions.reduce(async (previousPromise, nextAsyncFunction) => {
+            await previousPromise;
+            const result = await nextAsyncFunction();
+            console.log(result);
+        }, Promise.resolve());       
+    }
+
+    function awaitPromisesWithException() {
+        Promise.allSettled([
+            resolveInFiveSeconds(),
+            resolveInTwoSeconds(),
+            resolveInThreeSeconds()
+        ]).then( (values) => { 
+            console.log(values);
+            console.log("After 5 seconds...");
+        });
+    }
+
+    // invocation section
+    // awaitWithPromisesAll();
+    // awaitWithPromiseRace();
+    //awaitPromiseOneByOne();
+    awaitPromisesWithException();
+</script>
+</html>

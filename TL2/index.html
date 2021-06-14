@@ -11,11 +11,95 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v6.min.js"></script>
-
+  <link rel="stylesheet" href="css/helper.css">
 </head>
 
 <body>
+  <nav class="navbar navbar-inverse fixed-top navbar-expand-lg navbar-expand-lg navbar-dark bg-primary justify-content-center">
+    <div class="container" style="margin:auto">
+        <div class="row" style="width:100%">
+            <div class="navbar-brand h1 col-12 pt-sm-3 pt-md-5 pt-lg-5 pt-xl-5 d-inline-block bg-primary" style=" text-align: center;">CoronaVis - Visualisierungs von Corona Trends</div>
+            <button class="navbar-toggler" style="margin:auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-center col-12" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#allgemeine_info">Allgemeine Informationen </a>
+                    <a class="nav-item nav-link" href="#zeitliche_entwicklung">Zeitliche Entwicklung</a>
+                    <a class="nav-item nav-link" href="#fallzahlen">Fallzahlen/Einwohnerzahlen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10 ">
+              <div id="allgemeine_info">
+                  <img src="img/virus.jpg" class="img-fluid" alt="Responsive image" id="allgemeine_info">
+                  <p>
+                      Das Corona Virus hat sich zu einer weltweiten Pandemie entwickelt, die zum teilweisen Stillstand des alltäglichen Lebens geführt hat. Diese Seite soll einen zeitlichen Überblick über die Entwicklung in verschiedenen europäischen Ländern liefern und die
+                      Gesamtzahlen in Beziehung zur Einwohnerzahl setzen. <a href="https://www.bundesregierung.de/breg-de/themen/coronavirus">
+                      Mehr Informationen zum Corona Virus auf der Seite der Bundesregierung.</a>
+                  </p>
+              </div>
+              <div id="entwicklung" class="entwicklung">
+                  <img id="loading1" src="img/loader.gif" style="margin: 50px 0;" />
+              </div>
+              <div class="table-responsive">
+                  <table class="table" id="table">
+                      <thead class="table-primary">
+                          <tr>
+                              <th scope="datum">Datum</th>
+                              <!--
+                              <th scope="col">15.03.</th>
+                              <th scope="col">29.03.</th>
+                              <th scope="col">12.04.</th>
+                              <th scope="col">26.04.</th>
+                              <th scope="col">03.05.</th>
+                              <th scope="col">11.05.</th>
+                              <th scope="col">18.05.</th>
+                              <th scope="col">25.05.</th>
+                              -->
+                              <th scope="col" style="text-align: center;">xx.xx</th>
+                              <th scope="col" style="text-align: center;">xx.xx</th>
+                              <th scope="col" style="text-align: center;">xx.xx</th>
+                              <th scope="col" style="text-align: center;">xx.xx</th>
+                              <th scope="col" style="text-align: center;">xx.xx</th>
+                              <th scope="col" style="text-align: center;">xx.xx</th>
+                              <th scope="col" style="text-align: center;">xx.xx</th>
+                              <th scope="col" style="text-align: center;">xx.xx</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th scope="row">Tägliche Neuinfektionen</th>
+                              <td style="text-align: center;">...</td>
+                              <td style="text-align: center;">...</td>
+                              <td style="text-align: center;">...</td>
+                              <td style="text-align: center;">...</td>
+                              <td style="text-align: center;">...</td>
+                              <td style="text-align: center;">...</td>
+                              <td style="text-align: center;">...</td>
+                              <td style="text-align: center;">...</td>
+                          </tr>
+                      </tbody>
+                  </table>
 
+              </div>
+              <br>
+              <h1 id="fallzahlen">Fallzahlen/Einwohnerzahlen</h1>
+              <div class="text-center" id="containerFaelle">
+                  <img id="loading2" src="img/loader.gif">
+              </div>
+              <br>
+          </div>
+          <div class="col-1"></div>
+      </div>
+  </div>
+</section>
 </body>
-
+  <script type="text/javascript" src="js/plotting.js"></script>
 </html>
